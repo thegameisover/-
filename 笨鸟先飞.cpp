@@ -243,37 +243,42 @@ void  program()
 		birdmove(birds);
 		if (birds.birdx == pillar1.pillarx && ((birds.birdy >= 1 && birds.birdy <= pillar1.pillary) || (birds.birdy >= pillar1.pillary + 5 && birds.birdy <= 20)))
 		{
-			cout << "game over！" << endl;
+			cout << "得分：" << count1 << endl;
+            cout << "game over！" << endl;
 			break;
 		}
 		else if (birds.birdx == pillar2.pillarx && ((birds.birdy >= 1 && birds.birdy <= pillar2.pillary) || (birds.birdy >= pillar2.pillary + 5 && birds.birdy <= 20)))
 		{
-			cout << "game over!" << endl;
+			cout << "得分：" << count1 << endl;
+            cout << "game over!" << endl;
 			break;
 		}
 		else if (birds.birdx == pillar3.pillarx && ((birds.birdy >= 1 && birds.birdy <= pillar3.pillary) || (birds.birdy >= pillar3.pillary + 5 && birds.birdy <= 20)))
 		{
-			cout << "game over!" << endl;
+			cout << "得分：" << count1 << endl;
+            cout << "game over!" << endl;
 			break;
 		}
 		else if (birds.birdx == pillar4.pillarx && ((birds.birdy >= 1 && birds.birdy <= pillar4.pillary) || (birds.birdy >= pillar4.pillary + 5 && birds.birdy <= 20)))
 		{
-			cout << "game over!" << endl;
+			cout << "得分：" << count1 << endl;
+            cout << "game over!" << endl;
 			break;
 		}
 		else if (birds.birdx == pillar5.pillarx && ((birds.birdy >= 1 && birds.birdy <= pillar5.pillary) || (birds.birdy >= pillar5.pillary + 5 && birds.birdy <= 20)))
 		{
-			cout << "game over!" << endl;
+			cout << "得分：" << count1 << endl;
+            cout << "game over!" << endl;
 			break;
 		}
-		cout << "得分：" << count1 << endl;
+        cout << "得分：" << count1 << endl;
 	}
-}
+} 
 
 int main()
 {
 	startshow();
-	int choose;
+	int choose; 
 	cin >> choose;
 	switch (choose)
 	{
@@ -283,5 +288,6 @@ int main()
 	case 2:
 		return 0;
 	}
+    system("pause");
 	return 0;
 }
